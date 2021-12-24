@@ -1,0 +1,315 @@
+/* _-_-_- base/RESET -_-_-_ */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../../assets/fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../../assets/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Medium";
+  src: url("../../assets/fonts/OpenSans/OpenSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../../assets/fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../../assets/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url("../../assets/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+/* _-_-_- base/RESET -_-_-_ */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+body {
+  font-family: "OpenSans-Regular";
+  font-weight: 400;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #F4F5F8;
+  width: 70%;
+  margin: auto;
+}
+.container h1 {
+  font-weight: 400;
+}
+
+.header {
+  background-color: #003C55;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 0.1rem;
+}
+.header .logo {
+  width: 16.25rem;
+  height: 7.188rem;
+  opacity: 1;
+}
+.header h1 {
+  text-align: center;
+  font-family: "OpenSans-Bold";
+  font-weight: 700;
+  font-size: 3rem;
+  color: #F4F5F8;
+  letter-spacing: 0;
+  line-height: 4.063rem;
+  opacity: 1;
+}
+.header .next-to-form-nav {
+  background: #FFE000;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.header .custome-w {
+  width: 7.688rem;
+}
+
+.footer {
+  border: 1px solid #707070;
+  background-color: #707070;
+}
+.footer h1 {
+  text-align: center;
+  font-family: "OpenSans-Regular";
+  font-weight: 400;
+  font-size: 2.25rem;
+  color: #F4F5F8;
+  letter-spacing: 0;
+  line-height: 3.063rem;
+}
+
+.main-parent {
+  margin: 13rem 1rem 7rem 1rem;
+  display: flex;
+}
+.main-parent div {
+  margin: auto;
+}
+.main-parent div img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .main-parent {
+    flex-wrap: wrap;
+  }
+}
+.custome-center-align {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+.custome-center-align .custome-w {
+  width: 16.25rem;
+}
+
+.next-btn-nav {
+  background: #FFE000;
+  height: 1.938rem;
+  border: 1px solid #707070;
+  box-shadow: 0px 8px 6px #00000029;
+  opacity: 1;
+}
+
+.join-txt {
+  font-family: "OpenSans-Bold";
+  font-weight: 700;
+  font-size: 1.063rem;
+  letter-spacing: 0;
+  line-height: 1.438rem;
+  color: #003C55;
+  opacity: 1;
+}
+
+.last-page {
+  margin: 13rem auto;
+}
+.last-page p {
+  text-align: center;
+  font-family: "OpenSans-Bold";
+  font-weight: 700;
+  font-size: 3rem;
+  color: #003C55;
+  letter-spacing: 0;
+  line-height: 2.75rem;
+  opacity: 1;
+}
+
+.error {
+  font-family: "OpenSans-Regular";
+  font-weight: 400;
+  font-size: 0.688rem;
+  color: #FC0000;
+}
+
+.form {
+  margin: 5rem 5rem;
+}
+.form h1 {
+  text-align: center;
+  font-family: "OpenSans-Bold";
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #003C55;
+  letter-spacing: 0;
+  line-height: 2.375rem;
+  opacity: 1;
+}
+.form h3 {
+  font-family: "OpenSans-Bold";
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #003C55;
+  letter-spacing: 0;
+  line-height: 1.188rem;
+  opacity: 1;
+  margin-top: 1rem;
+}
+.form label {
+  font-family: "OpenSans-Regular";
+  font-weight: 400;
+  font-size: 0.688rem;
+  color: #003C55;
+  letter-spacing: 0;
+  line-height: 0.938rem;
+  opacity: 1;
+}
+.form span {
+  font-family: "OpenSans-Bold";
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #FC0000;
+  line-height: 1.063rem;
+}
+.form input {
+  font-family: "OpenSans-Light";
+  font-weight: 300;
+  font-size: 0.688rem;
+  color: #B5B5B5;
+  letter-spacing: 0.05rem;
+  line-height: 0.563rem;
+}
+.form .input-custome-size {
+  width: 17rem;
+}
+.form .input-custome-size2 {
+  width: 10rem;
+}
+.form .m-right {
+  margin-right: 1rem;
+}
+.form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.form .inline-groups {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form select {
+  padding: 1.3px 2px;
+  width: 10rem;
+}
+.form .captcha-margins {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
