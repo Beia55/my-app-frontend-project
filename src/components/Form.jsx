@@ -1,14 +1,37 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-// import axios from 'axios';
+import axios from 'axios';
 import Recaptcha from 'react-recaptcha';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function FormComponent() {
     // let ex = [];
     // const command = axios.post(`https://countriesnow.space/api/v0.1/countries/states`, {"country": "Romania"});
     
+    const [states, setStates] = useState([]);
+    
+    const getStates = () => {
+        axios.post(`https://countriesnow.space/api/v0.1/countries/states`, {"country": "Romania"})
+            .then( (response) => {
+                console.log(response.data.data.states);
+                const myStates = response.data.data.states;
+                setStates(myStates);
+            }
+        )
+    }
+
+    useEffect(() => getStates(), []);
+
+    // function fetchData(){
+    //     axios.post(`https://countriesnow.space/api/v0.1/countries/states`, {"country": "Romania"}).then(
+    //         function (response){
+    //             console.log(response.data.data.states);
+    //         }
+    //     )
+    // }
+    // fetchData();
+
     const [recaptchaIsValidated, setrecaptchaIsValidated] = useState(false);
     
     const callback = function () {
@@ -135,11 +158,11 @@ export default function FormComponent() {
                                     <div className='field m-right'>
                                         <label htmlFor="state">State:<span>*</span></label>
                                         <select name="state" id="state" value={values.state} onChange={handleChange} onBlur={handleBlur} className={errors.state && touched.state ?  "input-error" : null} >
-                                            <option value="california" defaultValue>California</option>
-                                            <option value="texas">Texas</option>
-                                            <option value="nevada">Nevada</option>
-                                            <option value="florida">Florida</option>
-                                            <option value="ohio" >Ohio</option>
+                                            {
+                                                states.map((state) => (
+                                                    <option value={state.name}>{state.name}</option>
+                                                ))
+                                            }
                                         </select>
                                         {errors.state && touched.state && (<span className="error">{errors.state}</span>)}
                                     </div>
