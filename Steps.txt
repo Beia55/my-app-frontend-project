@@ -1,0 +1,3 @@
+1 - npm install
+2 - sass -w src/styles/main.scss src/styles/css/main.css
+3 - npm start
